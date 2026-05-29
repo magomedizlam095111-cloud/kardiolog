@@ -19,6 +19,7 @@
     <main>
         <div class="container">
             <div class="card">
+
                 <h2>Запись на приём</h2>
 
                 <p><strong>Дата приёма:</strong> 12 июня</p>
@@ -30,7 +31,35 @@
                     и получения дополнительной информации.
                 </p>
 
-                <button id="recordButton">Записаться</button>
+                <form id="appointmentForm">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Ваше имя"
+                        required
+                    >
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Номер телефона"
+                        required
+                    >
+
+                    <textarea
+                        id="message"
+                        placeholder="Опишите ваш вопрос"
+                    ></textarea>
+
+                    <button type="submit">
+                        Отправить заявку
+                    </button>
+
+                </form>
+
+                <div id="aiResponse"></div>
+
             </div>
         </div>
     </main>

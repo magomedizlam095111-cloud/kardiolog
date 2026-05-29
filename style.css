@@ -56,10 +56,30 @@ main {
 
 .description {
     margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
 }
 
 button {
-    margin-top: 20px;
     padding: 12px 20px;
     border: none;
     background-color: #c62828;
@@ -71,6 +91,15 @@ button {
 
 button:hover {
     opacity: 0.9;
+}
+
+#aiResponse {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    display: none;
+    line-height: 1.5;
 }
 
 footer {
