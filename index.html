@@ -3,70 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кардиолог — Гакаев Биххан Русланович</title>
-
+    
+    <!-- SEO Meta Tags -->
+    <title>Кардиолог Гакаев Биххан Русланович — Приём в Грозном</title>
+    <meta name="description" content="Запись на приём к кардиологу Гакаеву Биххану Руслановичу в городе Грозный. Профессиональная кардиологическая помощь, консультация и диагностика заболеваний сердца.">
+    <meta name="keywords" content="кардиолог Грозный, Гакаев Биххан Русланович, приём кардиолога, запись к врачу, кардиология Чечня, консультация кардиолога">
+    <meta name="author" content="Гакаев Биххан Русланович">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Кардиолог Гакаев Биххан Русланович">
+    <meta property="og:description" content="Профессиональная кардиологическая помощь в Грозном. Запись на приём.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
+    <!-- Header -->
+    <header class="header" role="banner">
         <div class="container">
-            <h1>Гакаев Биххан Русланович</h1>
-            <p>Кардиолог • Приём в городе Грозный • 12 июня</p>
+            <nav class="header-nav" aria-label="Главная навигация">
+                <div class="logo">
+                    <span class="logo-icon" aria-hidden="true">❤️</span>
+                    <span class="logo-text">Др. Гакаев</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#about">О враче</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#appointment" class="nav-cta">Записаться</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
     <main>
-        <div class="container">
-            <div class="card">
-
-                <h2>Запись на приём</h2>
-
-                <p><strong>Дата приёма:</strong> 12 июня</p>
-                <p><strong>Город:</strong> Грозный</p>
-                <p><strong>Специализация:</strong> Кардиолог</p>
-
-                <p class="description">
-                    Оставьте заявку для записи на консультацию
-                    и получения дополнительной информации.
-                </p>
-
-                <form id="appointmentForm">
-
-                    <input
-                        type="text"
-                        id="name"
-                        placeholder="Ваше имя"
-                        required
-                    >
-
-                    <input
-                        type="tel"
-                        id="phone"
-                        placeholder="Номер телефона"
-                        required
-                    >
-
-                    <textarea
-                        id="message"
-                        placeholder="Опишите ваш вопрос"
-                    ></textarea>
-
-                    <button type="submit">
-                        Отправить заявку
-                    </button>
-
-                </form>
-
-                <div id="aiResponse"></div>
-
+        <!-- Hero Section -->
+        <section class="hero" id="about" aria-labelledby="hero-heading">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 id="hero-heading">Гакаев Биххан Русланович</h1>
+                        <p class="hero-subtitle">Врач-кардиолог</p>
+                        <div class="hero-info">
+                            <div class="info-item">
+                                <span class="info-icon" aria-hidden="true">📍</span>
+                                <span>г. Грозный</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon" aria-hidden="true">📅</span>
+                                <span>Приём: 12 июня</span>
+                            </div>
+                        </div>
+                        <p class="hero-description">
+                            Профессиональная диагностика и лечение заболеваний сердечно-сосудистой системы. 
+                            Индивидуальный подход к каждому пациенту.
+                        </p>
+                        <a href="#appointment" class="btn btn-primary">Записаться на приём</a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services" id="services" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading" class="section-title">Услуги</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">🩺</div>
+                        <h3>Консультация</h3>
+                        <p>Первичный приём и осмотр пациента, сбор анамнеза</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">📊</div>
+                        <h3>Диагностика</h3>
+                        <p>ЭКГ, мониторинг давления, оценка рисков</p>
+                    </article>
+                    <article class="service-card">
+                        <div class="service-icon" aria-hidden="true">💊</div>
+                        <h3>Лечение</h3>
+                        <p>Назначение терапии и профилактических мероприятий</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Appointment Section -->
+        <section class="appointment" id="appointment" aria-labelledby="appointment-heading">
+            <div class="container">
+                <div class="appointment-card">
+                    <h2 id="appointment-heading">Запись на приём</h2>
+                    <p class="appointment-description">
+                        Оставьте заявку для записи на консультацию и получения дополнительной информации.
+                    </p>
+                    
+                    <form id="appointmentForm" class="appointment-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                placeholder="Иван Иванов"
+                                required
+                                minlength="2"
+                                pattern="[А-Яа-яЁёA-Za-z\s-]+"
+                                aria-required="true"
+                                aria-describedby="name-error"
+                            >
+                            <span class="error-message" id="name-error" role="alert"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="+7 (___) ___-__-__"
+                                required
+                                pattern="\+7\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}"
+                                aria-required="true"
+                                aria-describedby="phone-error phone-hint"
+                            >
+                            <small id="phone-hint" class="form-hint">Формат: +7 (XXX) XXX-XX-XX</small>
+                            <span class="error-message" id="phone-error" role="alert"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Сообщение</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                placeholder="Опишите вашу проблему или вопрос..."
+                                maxlength="500"
+                                aria-describedby="message-counter"
+                            ></textarea>
+                            <div class="char-counter" id="message-counter">0 / 500</div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-submit">
+                            <span class="btn-text">Отправить заявку</span>
+                            <span class="btn-loader" aria-hidden="true"></span>
+                        </button>
+                    </form>
+                    
+                    <!-- Success Notification -->
+                    <div id="successNotification" class="notification notification-success" role="alert" aria-live="polite" hidden>
+                        <div class="notification-icon" aria-hidden="true">✓</div>
+                        <div class="notification-content">
+                            <h3>Заявка отправлена!</h3>
+                            <p>Спасибо, <span id="successName"></span>. Мы свяжемся с вами по номеру <strong id="successPhone"></strong>.</p>
+                            <p id="successMessage" class="notification-message"></p>
+                        </div>
+                        <button class="notification-close" aria-label="Закрыть уведомление">×</button>
+                    </div>
+                    
+                    <!-- Error Notification -->
+                    <div id="errorNotification" class="notification notification-error" role="alert" aria-live="polite" hidden>
+                        <div class="notification-icon" aria-hidden="true">✕</div>
+                        <div class="notification-content">
+                            <h3>Ошибка</h3>
+                            <p>Пожалуйста, исправьте ошибки в форме.</p>
+                        </div>
+                        <button class="notification-close" aria-label="Закрыть уведомление">×</button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <p>© 2026 Кардиологический приём</p>
+            <p>&copy; 2026 Кардиологический приём. Все права защищены.</p>
+            <p class="footer-note">Гакаев Биххан Русланович • Врач-кардиолог • г. Грозный</p>
         </div>
     </footer>
 
